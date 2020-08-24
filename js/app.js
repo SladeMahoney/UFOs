@@ -51,8 +51,8 @@ function filterTable() {
   // Loop through all of the filters and keep any data that
   // matches the filter values
   
-    Object.entries(filters).forEach(function([key,value]){
-      filteredData=filteredData.filter(row => row[key] === value)});
+    Object.entries(filters).forEach(function([id,value]){
+      filteredData=filteredData.filter(row => row[id] === value)});
     
   
   // Finally, rebuild the table using the filtered Data
